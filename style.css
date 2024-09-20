@@ -1,0 +1,287 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #181616;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+header .btn {
+    background-color: #4d5d6d; /* Bootstrap blue */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header .btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Intro Section Styles */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.temp {
+    width: 150px;              /* Set the desired width */
+    height: 50px;                /* Maintain th
+    transform: scale(0.3);     /* Scale down the image */
+    transform-origin: center;  /* Center the scaling */
+    float: right;              /* Float the image to the right */
+    margin-left: 20px;         /* Optional: add some space from the left */
+}
+
+
+
+.profile-photo {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    box-shadow: 0 8px 16px rgba(37, 36, 36, 0.2);
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    color: #23272b;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0077cc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+
+    .intro-text h2 {
+        font-size: 1.8em;
+    }
+
+    .intro-text p {
+        font-size: 1.1em;
+    }
+}
+.job img {
+    float: right;
+    margin-left: 20px; /* Optional: add some space between the image and the text */
+}
+/* Job and Project Styles */
+.job, .project, .activity, .responsibility {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job h3, .project h3, .activity h3, .responsibility h3 {
+    color: #0077cc; /* Main title color */
+    margin: 10px 0;
+}
+
+.job ul, .project ul, .activity ul, .responsibility ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0 0; /* Remove top margin for a cleaner look */
+}
+
+.job ul li, .project ul li, .activity ul li, .responsibility ul li {
+    margin: 5px 0;
+}
+
+/* Co-Curricular and Position of Responsibility Styles */
+.co-curricular, .por {
+    background-color: #f8f9fa; /* Light background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.co-curricular h2, .por h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the title */
+}
+
+.activity, .responsibility {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.responsibility h4 {
+    color: #0056b3; /* Darker color for subheadings */
+    margin-top: 15px; /* Add margin for spacing */
+}
+
+.profile {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.profile h2 {
+    font-size: 24px; /* Font size for heading */
+    color: #333; /* Dark color for text */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.profile p {
+    font-size: 16px; /* Font size for paragraphs */
+    color: #555; /* Slightly lighter color for text */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.profile a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.profile a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.projects {
+    background-color: #fff; /* White background for contrast */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+.projects h2 {
+    font-size: 24px; /* Heading font size */
+    color: #333; /* Dark text */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.project-boxes {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between boxes */
+}
+
+.project-box {
+    flex: 1; /* Allow boxes to grow equally */
+    min-width: 170px; /* Minimum width for responsive design */
+    background-color: #f9f9f9; /* Light background for boxes */
+    padding: 15px; /* Padding inside boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.project-box h3 {
+    font-size: 18px; /* Font size for project titles */
+    margin: 0; /* Remove default margin */
+}
+
+.project-box a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.project-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.project-box p {
+    font-size: 14px; /* Font size for dates */
+    color: #777; /* Lighter text color */
+    margin-top: 5px; /* Space above date */
+}
+
+
